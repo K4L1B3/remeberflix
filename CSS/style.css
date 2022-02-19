@@ -1,10 +1,10 @@
 * {
     padding: 0;
     margin: 0;
-   
+
 }
 
-body{
+body {
     background-color: #221F1F;
 }
 
@@ -12,10 +12,15 @@ body{
     display: flex;
     flex-direction: column;
     z-index: 2;
-    background: url(../img/wallpapers/wallpaperInteristellar.jpg) center/cover no-repeat;
+    background: linear-gradient(to bottom, transparent 30%,
+            rgb(34, 31, 31) 70%), url("../img/wallpapers/wallpaperInteristellar.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
     height: 100vh;
     padding: 10% 0% 10% 5%;
-    
+
+
 }
 
 /* .menu {
@@ -37,7 +42,7 @@ body{
     background-color: black;
     padding: 20px 80px 20px 20px;
     opacity: 0.2;
-    
+
 }
 
 h1 {
@@ -53,7 +58,7 @@ h3 {
     color: white;
 }
 
-.netflixWallpaper > p {
+.netflixWallpaper>p {
     font-family: 'Roboto', sans-serif;
     color: white;
     font-size: 1.4em;
@@ -63,10 +68,18 @@ h3 {
     margin: 15px 0;
 }
 
+
+
+.btAndIcon {
+
+    background-color: rgba(109, 109, 110, 0.7);
+    
+}
+
+
 .bt {
     padding: 10px 32px;
     font-size: 1.5em;
-    background-color: rgba(109, 109, 110, 0.7);
     color: white;
     text-align: center;
     background-repeat: no-repeat;
@@ -74,13 +87,41 @@ h3 {
     cursor: pointer;
     outline: none;
     font-family: 'Roboto', sans-serif;
-    font-weight: 500;
+    font-weight: 600;
     border-radius: 3%;
+    background-color: transparent;
+
+}
+
+.bt:hover{
+    color: black;
+}
+
+
+.btAndIcon:hover{
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+.btAndIcon {
+    margin: 5px;
     
 }
 
-.btGroups {
+.icon {
+    color: white;
+    margin: 20px; 
+    margin-left: 15px;
+    margin-right: -15px;  
+    font-size: 1.5rem;
+}
+
+.icon:hover{
     
+    color: black;
+}
+
+.btGroups {
+    display: flex;
 }
 
 .informations {
@@ -93,7 +134,7 @@ h3 {
 .Boxes1 {
     display: flex;
     flex-direction: column;
-    margin-top: -700px;
+    margin-top: -570px;
 }
 
 .Boxes2 {
@@ -110,13 +151,157 @@ h3 {
     display: flex;
     flex-direction: column;
 }
-.rowBoxes{
+
+.containerBoxes {
+    position: relative;
+}
+
+.rowBoxes {
     display: flex;
-    flex-direction: row;
+    overflow: hidden;
+    overflow-x: scroll;
+    width: 100%;
+
+}
+
+.rowBoxes::-webkit-scrollbar {
+    display: none;
+}
+
+.arrow{
+
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 200px;
+    height: 20%;
+    top: 150px;
+    padding: 20px;
+    font-size: 3rem;
+    color: white;
+    transition: 0.2s;
+    border-radius: 5px;
+    z-index: 999;
+    cursor:pointer;
+}
+
+.arrow:hover {
+
+    background-color: rgba(0, 0, 0, 0.4);
+    
+}
+
+.rowBoxes >.arrowLeft {
+    left: 0;
+}
+
+.rowBoxes >.arrowRight {
+    right: 0;
 }
 
 .titleBoxes {
     font-family: 'Roboto', sans-serif;
     color: white;
     font-size: 4em;
+}
+
+
+.boxesCard img {
+    width: 20rem;
+    margin: 5px;
+    height: 400px;
+    border-radius: 10px;
+    transition: 0.2s;
+}
+
+.rowBoxes img:hover {
+    transform: scale(1.05);
+}
+
+.rowBoxes > div {
+    border-radius: 10px;
+
+}
+
+.boxesCard {
+    padding-left: 90px;
+}
+
+.navMain {
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+}
+
+.netflixProfile {
+    display: flex;
+    margin-right: 40px;
+}
+
+.profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+
+}
+
+.profile i {
+    color: white;
+    margin-top: 10px;
+    font-size: 1.5rem;
+}
+
+.profile a {
+    margin: 10px;
+    font-size: 0.8rem;
+    text-decoration: none;
+    color: #AAA;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+
+}
+
+.iconsRight {
+    display: flex;
+    align-items: center;
+    
+}
+
+.iconsRight i {
+    margin: 20px;
+    color: white;
+    font-size: 1.3rem;
+}
+
+nav {
+    margin-left: 20px;
+}
+
+header .container{
+    position: fixed;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+    background: rgb(0,0,0);
+    background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(0,212,255,0) 100%);
+}
+header .logo{
+    color: var(--vermelho);
+    font-family: 'Bebas Neue';
+    font-size: 40px;
+    color: #E50914;
+}
+
+header nav a{
+    text-decoration: none;
+    color: #AAA;
+    margin-right: 10px;
+    display: inline;
+    text-align: center;
+
+}
+header a:hover{
+    color:#FFF;
 }

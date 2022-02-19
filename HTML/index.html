@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,231 +10,132 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"rel="stylesheet">
 
+
+    <script src="https://kit.fontawesome.com/3878147132.js" crossorigin="anonymous"></script>
 
 </head>
+
 <body>
-    <main>
-<!-- 
-        <div class="menu">
-            <div class="netflixProfile">
-                <input type="image" src="">
-                <input type="button" value="NomePerfil">
+
+    <header>
+        <div class="container" id="navContainer">
+            <div class="navMain">
+                <h2 class="logo">CLASSICFLIX</h2>
+                <nav>
+                    <a href="#">Início</a>
+                    <a href="#" >Séries</a>
+                    <a href="#">Filmes</a>
+                    <a href="#">Documentários</a>
+                </nav>
             </div>
-    
-            <div class="netflixNav">
-                <img src="" class="searchIcon">
-                <a href="">Search</a>
-                <img src="" class="homeIcon">
-                <a href="">Home</a>
-                <img src="" class="seriesIcon">
-                <a href="">Series</a>
-                <img src="" class="moviesIcon">
-                <a href="">Movies</a>
-                <img src="" class="myListIcon">
-                <a href="">My List</a>
-                <img src="" class="newIcon">
-                <a href="">New</a>
-            </div>
-    
-            <div class="configCamp">
-                <a href="">Settings</a>
-                <a href="">Exit Netflix</a>
-            </div>
-
-            // Position fixed no menu
-            // height 100vh
-            // width inicial e final
-            // animação feita no JS on mouse over
-            //
-
-
-        </div> -->
-
-        <header>
 
             
+            <div class="netflixProfile">
+                <di class="iconsRight">
+                    <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a> 
+                    <a href="#"><i class="fa-solid fa-bell"></i></a> 
+                </di>
+                
+                <div class="profile">
+                    <i class="fa-solid fa-user"></i>
+                    <a href="#">Username</a>
+                </div>
+            </div>
+
+        </div>
+    </header>
+     
+
+    <main>
             <div class="netflixWallpaper">
                 <h1>interstellar</h1>
-                <p>When Earth becomes uninhabitable in the future, 
-                    a farmer and ex-NASA pilot, Joseph Cooper, is 
-                    tasked to pilot a spacecraft, along with a team 
-                    of researchers, to find a new planet for humans.</p>
-                <div class="informations">    
+                <p>Quando a Terra se torna inabitável no futuro, um agricultor e ex-piloto da NASA, Joseph Cooper, é encarregado de pilotar uma nave espacial, juntamente com uma equipe de pesquisadores, para encontrar um novo planeta para os humanos.</p>
+                <div class="informations">
                     <div class="btGroups">
-                        <input type="button" class="bt" id="btPlay" value="Play">
-                        <input type="button" class="bt" id="myList" value="My List">
-                   
+                        <div class="btAndIcon">
+                            <i class="fa-solid fa-play icon"></i>
+                            <input type="button" class="bt" id="btPlay" value="Play">
+                        </div>
+
+                        <div class="btAndIcon">
+                            <i class="fa-solid fa-plus icon"></i>
+                            <input type="button" class="bt" id="myList" value="My List">
+                        </div>
+
                     </div>
 
-                    <p class="paragraph">16+</p>
-                    
+                    <div>
+                        <p class="paragraph">16+</p>
+                    </div>
+
                 </div>
             </div>
-                
-            
-        </header>
+
+        <section class="boxesCard">
+            <section class="Boxes1">
+                <div>
+                    <h4 class="titleBoxes">
+                        Em Alta
+                    </h4>
+                </div>
+                <div class="containerBoxes">
+                    <div class="rowBoxes">
+
+                        <section class="arrowLeft arrow">
+                            <i class="fa-solid fa-angle-left" ></i>
+                        </section>
+                        
+                            <div class="item">
+                                <img src="../img/banners/vanilla-sky-2.jpg">
+                            </div>
+
+                            <div class="item">
+                                <img src="../img/banners/ace-ventura-2.jpg">
+                            </div>
+
+                            <div class="item">
+                                <img src="../img/banners/alien.jpg">
+                            </div>
+
+                            <div class="item">
+                                <img src="../img/banners/american-pie-2.jpg">
+                            </div>
+
+                            <div class="item">
+                                <img src="../img/banners/american-psycho-2.jpg">
+                            </div>
+
+                            <div class="item">
+                                <img src="../img/banners/back-to-the-future-2.jpg">
+                            </div>
+
+                            <div class="item">
+                                <img src="../img/banners/blade-runner-2.jpg">
+                            </div>
+                        <div class="arrowRight arrow">
+                            <i class="fa-solid fa-angle-right"></i>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+           
 
 
-        <section class="Boxes1">
-            <div>
-                <h4 class="titleBoxes">
-                    Title boxes
-                </h4>
-            </div>
-            <div class="rowBoxes">
-                <div> 
-                    <img src="../img/banners/vanilla-sky-2.jpg">
-                </div>
-                
-                <div>
-                    <img src="../img/banners/ace-ventura-2.jpg">
-                </div>
-                
-                <div>
-                    <img src="../img/banners/alien.jpg">
-                </div>
-                
-                <div>
-                    <img src="../img/banners/american-pie-2.jpg">
-                </div>
-                
-                <div>
-                    <img src="../img/banners/american-psycho-2.jpg">
-                </div>
-                
-                <div>
-                    <img src="../img/banners/back-to-the-future-2.jpg">
-                </div>
 
-                <div>
-                    <img src="../img/banners/blade-runner-2.jpg">
-                </div>
-            </div>
-        </section>
-        
-        <section class="Boxes2">
-            <div>
-                <h4 class="titleBoxes">
-                    Title boxes
-                </h4>
-            </div>
-
-            <div class="rowBoxes">
-                <div> 
-                    <img src="../img/banners/donnie-darko-2.jpg">
-                </div>
-                
-                <div>
-                    <img src="../img/banners/edge-of-tomorrow-3.jpg">
-                </div>
-                
-                <div>
-                    <img src="../img/banners/godfather-2.jpg">
-                </div>
-                
-                <div>
-                    <img src="../img/banners/godfather-6.jpg">
-                </div>
-                
-                <div>
-                    <img src="../img/banners/harry-potter-2.jpg">
-                </div>
-                
-                <div>
-                    <img src="../img/banners/jaws-2.jpg">
-                </div>
-
-                <div>
-                    <img src="../img/banners/kill-bill-vol-1-2.jpg">
-                </div>
-            </div>
         </section>
 
-        <section class="Boxes3">
-            <div>
-                <h4 class="titleBoxes">
-                    Title boxes
-                </h4>
-            </div>
-
-            <div class="rowBoxes">
-                <div> 
-                    <img src="../img/banners/lord-of-the-rings-fellow-2.jpg">
-                </div>
-                
-                <div>
-                    <img src="../img/banners/monsters-inc-2.jpg">
-                </div>
-                
-                <div>
-                    <img src="../img/banners/nightmare-bfr-christmas-2.jpg">
-                </div>
-                
-                <div>
-                    <img src="../img/banners/return-of-the-jedi-2.jpg">
-                </div>
-                
-                <div>
-                    <img src="../img/banners/rocky-2.jpg">
-                </div>
-                
-                <div>
-                    <img src="../img/banners/rush-hour-2-2.jpg">
-                </div>
-
-                <div>
-                    <img src="../img/banners/scream-2-2.jpg">
-                </div>
-            </div>
-        </section>
-
-        <section class="Boxes4">
-            <div>
-                <h4 class="titleBoxes">
-                    Title boxes
-                </h4>
-            </div>
-
-            <div class="rowBoxes">
-                <div> 
-                    <img src="../img/banners/se7en-2.jpg">
-                </div>
-                
-                <div>
-                    <img src="../img/banners/spirited-away-2.jpg">
-                </div>
-                
-                <div>
-                    <img src="../img/banners/star-wars-iv-2.jpg">
-                </div>
-                
-                <div>
-                    <img src="../img/banners/stargate-2.jpg">
-                </div>
-                
-                <div>
-                    <img src="../img/banners/the-mask-2.jpg">
-                </div>
-                
-                <div>
-                    <img src="../img/banners/the-matrix-2.jpg">
-                </div>
-
-                <div>
-                    <img src="../img/banners/topgun-2.jpg">
-                </div>
-            </div>
-        </section>
-
-
-       
     </main>
 
+    <footer>
 
-    
+    </footer>
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="../JS/main.js"></script>
 </body>
+
 </html>
-
-
