@@ -8,40 +8,115 @@ body{
     background-color: #221F1F;
 }
 
-.slideApresentation{
-    position: absolute;
-    padding-top: 0;
-    width: 2080px;
-    height: auto;
-    z-index: 1;
-    background-size: contain;
-    background-repeat: no-repeat;
-}
-
 .netflixWallpaper {
-    position: absolute;
+    display: flex;
+    flex-direction: column;
     z-index: 2;
-   
+    background: url(../img/wallpapers/wallpaperInteristellar.jpg) center/cover no-repeat;
+    height: 100vh;
+    padding: 10% 0% 10% 5%;
+    
 }
 
 /* .menu {
     position: absolute;
     z-index: 10;
    
+
 }  */
 
 
-.idadeFilme {
-    position: absolute;
-    color: white;
-    font-size: large;
-    font-weight: 700;
-    z-index: 4;
-    right: 70px;
-    margin-top: 50px;
-    box-shadow: inset 8em 1em gold;
-}
 
 .paragraph {
+    position: relative;
+    top: 13px;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    font-size: 1.6em;
+    font-weight: 700;
+    background-color: black;
+    padding: 20px 80px 20px 20px;
+    opacity: 0.2;
     
+}
+
+h1 {
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 6em;
+    letter-spacing: 10px;
+    text-transform: uppercase;
+}
+
+h3 {
+    color: white;
+}
+
+.netflixWallpaper > p {
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    font-size: 1.4em;
+    font-weight: 500;
+    line-break: normal;
+    width: 550px;
+    margin: 15px 0;
+}
+
+.bt {
+    padding: 10px 32px;
+    font-size: 1.5em;
+    background-color: rgba(109, 109, 110, 0.7);
+    color: white;
+    text-align: center;
+    background-repeat: no-repeat;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    border-radius: 3%;
+    
+}
+
+.btGroups {
+    
+}
+
+.informations {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.Boxes1 {
+    display: flex;
+    flex-direction: column;
+    margin-top: -700px;
+}
+
+.Boxes2 {
+    display: flex;
+    flex-direction: column;
+}
+
+.Boxes3 {
+    display: flex;
+    flex-direction: column;
+}
+
+.Boxes4 {
+    display: flex;
+    flex-direction: column;
+}
+.rowBoxes{
+    display: flex;
+    flex-direction: row;
+}
+
+.titleBoxes {
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    font-size: 4em;
 }
